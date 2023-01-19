@@ -17,16 +17,8 @@ public class JDBCMain {
 	
 		try {
 //			lc.start();
-//			dc.start();
-			DepartmentDTO departmentDTO = new DepartmentDTO();
-			departmentDTO.setDepartment_id(280);
-	
-			int result = departmentDAO.deleteData(departmentDTO);
-			if(result>0) {
-				System.out.println("성공");
-			}else {
-				System.out.println("실패");
-			}
+			dc.start();
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
