@@ -11,13 +11,12 @@ public class JDBCMain {
 
 	public static void main(String[] args) {
 		System.out.println("start");
-		DepartmentController dc = new DepartmentController();
-		LocationController lc = new LocationController();
-		DepartmentDAO departmentDAO = new DepartmentDAO();
+
+		FrontController fc = new FrontController();
 	
 		try {
 //			lc.start();
-			dc.start();
+			fc.start();
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
